@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<style>
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+		background-color: whitesmoke;
+	}
+	.container {
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction: column;
+		
+	}
+</style>
+
+<Layout>
+	<div class="container">
+		<Header />
+		<Footer />
+	</div>
+</Layout>
