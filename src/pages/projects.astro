@@ -2,12 +2,23 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import Carousel from "astro-simple-carousel";
+import { Image } from "astro:assets";
 ---
 
 <Layout>
 	<div class="mainContent">
-		<div>
-            <p>You can contact me by email: contact@oscarsanderson.net</p>
-		</div>
+		<div><h3>My Projects</h3></div>
+		<Carousel>
+			<div slot="1">
+				<p>Firefox Extension Template Generator</p>
+				<img src="">
+			</div>
+			<div slot="2">
+				<p>New Look</p>
+				<img src="">
+			</div>
+		</Carousel>	
+		<div><a href="https://github.com/SandroLinux">More on GitHub</a></div>
 	</div>
 </Layout>
